@@ -27,7 +27,7 @@
  const nameFn = () => statements      // Formato flecha
  ````
  
-## Main points: function are first-class objects
+## Main points: function as first-class objects
  
   - Las funciones, como objetos de orden superior, pueden ser tratadas como:
     - Variables
