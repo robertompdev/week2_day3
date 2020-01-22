@@ -39,7 +39,7 @@
   - El contexto está representado por `this`, refierendo según donde se encuentre a:
     - El contexto global es el objeto `window`
       ````javascript
-      this === window     // true
+      this === window       // true
       ````
     - El contexto de una función es el objeto `window`
       ````javascript
