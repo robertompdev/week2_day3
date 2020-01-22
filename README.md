@@ -60,17 +60,18 @@
       const person = {
             age: 22,
             grow() {
-                setInterval(function(){
-                  this.age      // undefined
-                }, 100)
+              setInterval(function(){
+                this.age      // undefined
+              }, 100)
                 
-                setInterval(function(){
-                  this.age      // 22
-                }.bind(this), 100)
+              setInterval(function(){
+                this.age      // 22
+              }.bind(this), 100)
                 
-                setInterval(() => {
-                  this.age      // 22
-                }, 100)
-            }
+              setInterval(() => {
+                this.age      // 22
+              }, 100)
+           }
+        }        
         ````
 
