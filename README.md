@@ -56,7 +56,7 @@
             }
       ````
     - El contexto de una función anidada en un método es el objeto `window`, a excepción del formato de función flecha, que no reorienta el contexto hacia `window`, o del uso de `.bind()` para trasnferir a la función el contexto deseado:
-    ````javascript
+      ````javascript
       const person = {
             age: 22,
             grow() {
@@ -72,5 +72,5 @@
                   this.age      // 22
                 }, 100)
             }
-      ````
+        ````
 
