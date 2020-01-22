@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS</title>
+</head>
+
+<body>
+    <script>
+
+
+        // // El contexto global es window
+        // console.log(this)
+
+        // var myAge = 33
+
+        // console.log(myAge)
+        // console.log(window.myAge)
+        // console.log(this.myAge)
+
+
+
+
+
+        // // El contexto de una función es window
+        // function sayHi() {
+        //     console.log(this)
+        // }
+        // sayHi()
+
+
+
+
+        // // El contexto en un objeto depende del tipo de función sobre el que se encuentre
+        // const person = {
+        //     age: 22,
+        //     weight: 89,
+        //     grow(years) {    // El contexto de un método es el objeto al que pertenece
+        //         this.age += years
+        //     },
+        //     run1() {
+        //         setInterval(function () {
+        //             this.weight -= .1
+        //             console.log(`La persona acaba de correr y su peso es de ${this.weight}`)    // El contexto de una función es window
+        //         }, 1000)
+        //     },
+        //     run2() {
+        //         const that = this
+        //         setInterval(function () {
+        //             that.weight -= .1
+        //             console.log(`La persona acaba de correr y su peso es de ${that.weight}`)
+        //         }, 1000)
+        //     },
+        //     run3() {
+        //         setInterval(function () {
+        //             this.weight -= .1
+        //             console.log(`La persona acaba de correr y su peso es de ${this.weight}`)
+        //         }.bind(this), 1000)     // .bind() permite reorientar el contexto de una función
+        //     },
+        //     run4() {
+        //         setInterval(() => {     // Las arrow function no reorientan el contexto
+        //             this.weight -= .1
+        //             console.log(`La persona acaba de correr y su peso es de ${this.weight}`)
+        //         }, 1000)
+        //     }
+        // }
+
+
+        // console.log(`Ahora la persona tiene ${person.age} años`)
+        // person.grow(10)
+        // console.log(`Ahora la persona tiene ${person.age} años`)
+        // // person.run1()
+        // // person.run2()
+        // // person.run3()
+        // person.run4()
+
+
+    </script>
+</body>
+
+</html>
